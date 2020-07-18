@@ -12,6 +12,8 @@ body {
   background-size: contain;
   color: white;
   padding: 4rem;
+  background-size: cover;
+  height: 100vh;
 }
 h1 {
   font-size: 2.5rem;
@@ -25,10 +27,12 @@ p {
   margin-bottom: 5rem;
 }
 #logo-img {
-  width: 10.5rem;
+  width: 160px;
 }
-#container {
+.container {
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 #product {
   margin-bottom: 8rem;
@@ -65,9 +69,25 @@ a {
   font-weight: 400;
 }
 
+.footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.icon:not(:last-child) {
+  margin-right: 16px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  display: none;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -83,9 +103,13 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
-  #container {
+  #logo-img {
+    width: 240px;
+  }
+  .main-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
   #btn {
     margin-left: 0;
@@ -94,16 +118,19 @@ a {
     width: 30%;
   }
   #product {
-    width: 60%;
+    width: 55%;
+    margin-bottom: 0;
   }
   #intro-head {
     font-size: 4rem;
     font-weight: 400;
   }
   #intro {
-    width: 50%;
+    width: 40%;
     text-align: left;
-    padding: 5rem;
-    margin-top: 4rem;
+  }
+  .footer {
+    margin-top: 30px;
+    justify-content: flex-end;
   }
 }
